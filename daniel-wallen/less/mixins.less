@@ -1,12 +1,13 @@
 // Mixins here
 
-.button-transform(@bg-color: skyblue, @height: 100px, @width: 1000px, @font: white) {
+.button-transform(@bg-color: @prime-color, @height: 100px, @width: 1000px, @font: white) {
     height: @height;
     width: @width;
     background: @bg-color;
-    border: 2px solid orange;
+    border: 2px solid @secondary-color;
     font-weight: bold;
     color: @font;
+    font-family: @header-font;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +28,7 @@
     transition: @transition;
 
     &:hover {
-        color: orange;
-        -webkit-text-stroke-width: 0.15px;
-        -webkit-text-stroke-color: black;
+        color: @secondary-color;
         cursor: pointer;
     }
 }

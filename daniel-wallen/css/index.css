@@ -165,7 +165,8 @@ h2 {
   font-size: 2rem;
 }
 .top nav a {
-  color: skyblue;
+  color: aqua;
+  font-weight: bold;
   text-decoration: none;
   margin-right: 20px;
   background: white;
@@ -173,8 +174,6 @@ h2 {
 }
 .top nav a:hover {
   color: orange;
-  -webkit-text-stroke-width: 0.15px;
-  -webkit-text-stroke-color: black;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -264,10 +263,11 @@ h2 {
 .bottom btn {
   height: 100px;
   width: 1000px;
-  background: skyblue;
+  background: aqua;
   border: 2px solid orange;
   font-weight: bold;
   color: white;
+  font-family: "Roboto";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +277,7 @@ h2 {
 }
 .bottom btn:hover {
   background: white;
-  color: skyblue;
+  color: aqua;
   cursor: pointer;
   -webkit-text-stroke-width: 0.25px;
 }
