@@ -160,6 +160,11 @@ h2 {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 800px) {
+  .top .logo h1 {
+    margin-bottom: 20px;
+  }
+}
 .top nav {
   font-family: "Roboto";
   font-size: 2rem;
@@ -200,6 +205,12 @@ h2 {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .feature-img {
+    margin-bottom: 0;
+    max-height: 100%;
+  }
+}
 .middle {
   font-family: Arial;
   font-size: 1.5rem;
@@ -224,12 +235,33 @@ h2 {
     justify-content: center;
   }
 }
+@media (max-width: 800px) {
+  .middle .card .card-text {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .middle .card .card-text {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
 @media (max-width: 500px) {
   .middle .card .card-text h2 {
     text-align: center;
   }
 }
+@media (max-width: 800px) {
+  .middle .card .card-text h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
+  .middle .card .card-text p {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 800px) {
   .middle .card .card-text p {
     margin: 0 20px;
   }
@@ -244,14 +276,43 @@ h2 {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .middle .card .card-img {
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .middle .card .card-img {
+    justify-content: center;
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .middle .card .card-img img {
     max-width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .middle .card .card-img img {
+    min-width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .middle .card {
     margin-top: 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .middle .card {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .middle {
     flex-direction: column;
   }
 }
@@ -285,5 +346,10 @@ h2 {
   .bottom btn {
     max-width: 100%;
     font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .bottom btn {
+    margin-top: 20px;
   }
 }
