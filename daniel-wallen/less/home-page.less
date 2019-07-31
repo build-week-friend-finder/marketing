@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 
     @media @mobile {
         display: none;
@@ -14,6 +15,7 @@
     @media @tablet {
         margin-bottom: 0;
         max-height: 100%;
+        max-width: 100%;
     }
 }
 
@@ -21,18 +23,19 @@
     font-family: Arial;
     font-size: 1.5rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 
     .card {
         display: flex;
-        justify-content: space-between;
-        margin: 40px 0;
+        margin-top: 60px;
+        width: 100%;
 
         .card-text {
             width: 40%;
-            margin: 120px 40px 0 40px;
+            margin-left: 80px;
+            margin-top: 120px;
             line-height: 2;
-            vertical-align: center;
 
             @media @mobile {
                 margin: 20px 0;
@@ -72,6 +75,9 @@
 
         .card-img {
             width: 60%;
+            display: flex;
+            margin-left: 80px;
+            justify-content: center;
 
             @media @mobile {
                 margin: 0 auto 20px auto;
@@ -91,6 +97,8 @@
             }
 
             img {
+                margin: 0 auto;
+
                 @media @mobile {
                     max-width: 100%;
                 }
@@ -128,6 +136,7 @@
 
     btn {
         .button-transform();
+        margin-top: 40px;
         margin-bottom: 20px;
 
         @media @mobile {
