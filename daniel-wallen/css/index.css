@@ -230,6 +230,11 @@ h2 {
   .feature-img {
     margin-bottom: 0;
     max-height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .feature-img img {
     max-width: 100%;
   }
 }
@@ -309,19 +314,8 @@ h2 {
     width: 100%;
   }
 }
-@media (max-width: 800px) {
-  .middle .card .card-img {
-    justify-content: center;
-    width: 100%;
-  }
-}
 .middle .card .card-img img {
   margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .middle .card .card-img img {
-    max-width: 100%;
-  }
 }
 @media (max-width: 800px) {
   .middle .card .card-img img {

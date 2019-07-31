@@ -29,7 +29,13 @@
     @media @tablet {
         margin-bottom: 0;
         max-height: 100%;
-        max-width: 100%;
+        width: 100%;
+    }
+
+    img {
+        @media @tablet {
+            max-width: 100%;
+        }
     }
 }
 
@@ -105,17 +111,8 @@
                 width: 100%;
             }
 
-            @media @tablet {
-                justify-content: center;
-                width: 100%;
-            }
-
             img {
                 margin: 0 auto;
-
-                @media @mobile {
-                    max-width: 100%;
-                }
 
                 @media @tablet {
                     min-width: 100%;
