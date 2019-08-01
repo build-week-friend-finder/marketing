@@ -1,0 +1,316 @@
+
+@mainColor: steelblue;
+@font-family: Roboto;
+
+
+
+html,body{
+	margin: 0;
+	padding: 0;
+  font-family: Roboto;
+}
+
+// ==================  MY ORIGINAL SHADOWING  ============================
+// p {
+// 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+// 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+// 	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+// 	transition: all 0.4s ease 0s;
+// 	margin: 5px;
+// 	  padding: 6px;
+// 	}
+// ========================================================================
+
+
+
+
+p {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px @mainColor;
+	-moz-box-shadow: 0px 5px 40px -10px @mainColor;
+	transition: all 0.4s ease 0s;
+	margin: 5px;
+	  padding: 6px;
+	  color: @mainColor;
+
+	}
+
+
+
+
+/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
+.logo {
+
+ font-size: 40px;
+  border-right: 90px;
+  color: white;
+}
+
+// .menu-item:hover {
+// color: @mainColor;
+// }
+/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
+
+.get-started {
+	// background: blue;
+}
+
+
+
+
+
+.main-header{
+	background-color: @mainColor;
+	text-align: center;
+	height: 180px;
+	width: 100%;
+	// border: 2px solid red;
+	display: flex;
+
+	justify-content: space-evenly;
+
+}
+
+.main-nav{
+	margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
+	// border: 2px solid cyan;
+	width: 100%;
+
+}
+
+li{
+	list-style: none;
+	padding-top: .3em;
+    padding-bottom: .3em;
+    
+	
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase; 
+	font-weight: 500;
+	display: block;
+
+}
+
+.main{
+	height:560px;
+	// height: 450px;
+  
+  
+/*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
+// https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg
+	background-image: url("https://www.viennawurstelstand.com/wp-content/uploads/2017/03/viennawurstelstand_boardgamebars_cafebenno3.jpg");
+	background-size: cover;
+	text-align: center;
+	position: relative;
+
+}
+.wrapper{
+	position: absolute;
+	width: 100%;
+// border: 3px solid red;
+/* 	top: 15%; */
+	
+}
+.main-title{
+	text-transform: uppercase;
+	font-size: 3.5em;
+	margin-bottom: .5rem;
+	letter-spacing: 1px;
+  color: lightsteelblue;
+}
+
+ #button{
+	padding: 10px 24px;
+	border-radius: 6px;
+	background: @mainColor;
+ 	display: inline;
+ 	// font-weight: 600;
+	// letter-spacing:1px; 
+	// color: @mainColor;
+ }
+
+/*------Column------*/
+
+
+section .container{
+	text-align: center;
+	
+
+
+}
+.col{
+	width: 75%;
+	margin:2em auto;
+	
+}
+
+.btn-default{
+	padding: 16px 20px;
+	margin: auto;
+	border: 1px solid grey;
+	// display: inline;            #############################
+	color: lightblue;
+	font-size: 1em;
+	background: @mainColor;
+	border-radius: 6px;
+	width: 120px;
+	height: 20px;
+}
+
+/*-----footer-----*/
+
+footer{
+	height: 85px;
+	background-color: @mainColor;
+	color: #ffffff;
+
+}
+
+// footer p{
+// 	padding: 1.5em 5em;
+// 	font-size: .8em;
+// }
+
+
+/*Pseudo Classes*/
+
+
+a:hover{
+	color: white;
+	opacity: .7;
+	text-shadow: 2px 2px 5px ;
+
+}
+
+
+/*Media Quaries*/
+
+@media(min-width: 768px){
+	
+
+	/*-----Main-Header-----*/
+
+	.main-nav,
+	.main-nav li{
+		display: inline-block;	
+	}
+
+	.main-nav{
+		margin: 1em 3em;
+	}
+
+	.main-nav li{
+		margin: .5em;
+		padding: .3em;
+	}
+
+	.main-header{
+		height: 4.5em;
+
+	}
+
+	.main-header .container{
+		text-align: left;
+	}
+
+	
+
+	/*-----Section------*/
+	
+// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
+	// section .container{
+	// 	height: 340px;
+	// 	// border: 2px solid purple;
+	// 	display: flex;
+	// 	justify-content: space-around;
+
+	// }
+// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
+
+
+
+
+	.col{
+		display: inline-block;
+		width: 180px;          /*I tried percentages and em value too here, but that doesn't fit*/
+		margin-left: 1em;
+		vertical-align: top;
+		margin-top: 4em;
+		// border: 2px solid blue;
+
+	}
+
+	.col p{
+		margin-bottom: 1.8em;
+		border-radius: 6px;
+
+	}
+}
+
+// -----------------   ADDING MEDIA QUERIES   ---------------------ADDING MEDIA QUERIES   ---------------------
+
+	@media(min-width: 1050px){
+
+		/*------Main-header------*/
+
+
+		.main-nav{
+			// margin-left: 8em;
+		}
+
+		/*-----Main-----*/          
+
+		.main{
+			height: 820px;
+		}
+
+		#button{
+			padding: 16px 40px;
+			background-color: @mainColor;
+			display: inline;
+		}
+
+		.main-title{
+			font-size: 4.5em;
+		}
+
+
+		/*------Section------*/
+
+// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
+		section .container{
+			width: 90%;
+			// margin: 0 auto;
+			display: flex;
+			justify-content: space-evenly;
+			align-content: center;
+			margin-left: 5%;
+		}
+// // ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
+
+		.col{
+			width: 220px;
+			margin-left: 3.5em;
+		}
+
+
+		/*-----footer-----*/
+
+		footer p{
+			padding: 2em 6em;
+			font-size: 20px;
+			color: white;
+		}
+
+	}
+
+// ============================================  RESIZE IMAGE @ 700PX =====================================
+	@media(max-width: 700px) {
+		.main {
+			display: none;
+		}
+	}
