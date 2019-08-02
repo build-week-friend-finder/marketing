@@ -5,8 +5,6 @@
     width: @width;
     background: @bg-color;
     border: 2px solid @secondary-color;
-    color: @font;
-    font-family: @header-font;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +12,20 @@
     font-size: 3rem;
     transition: 1s;
 
+    a {
+        text-decoration: none;
+        font-family: @header-font;
+        color: @font;
+    }
+
     &:hover {
         background: @font;
-        color: @bg-color;
         cursor: pointer;
         -webkit-text-stroke-width: 0.25px;
+
+        a {
+            color: @bg-color;
+        }
     }
 }
 
