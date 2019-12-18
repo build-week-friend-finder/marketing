@@ -106,6 +106,7 @@ section {
 }
 body {
   line-height: 1;
+  max-width: 100%;
 }
 ol,
 ul {
@@ -142,6 +143,11 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
 }
 .top {
   margin-top: 20px;
@@ -304,7 +310,7 @@ h2 {
   .middle .card .card-img {
     margin: 0 auto 20px auto;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
   }
 }
 @media (max-width: 800px) {
@@ -341,22 +347,19 @@ h2 {
 }
 .bottom .cta {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
 }
 .bottom btn {
-  height: 100px;
-  width: 1000px;
+  width: 75vw;
+  height: 10vh;
+  padding-top: 12px;
   background: aqua;
   border: 2px solid orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
+  text-align: center;
   font-size: 3rem;
   transition: 1s;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 .bottom btn a {
   text-decoration: none;
@@ -371,14 +374,28 @@ h2 {
 .bottom btn:hover a {
   color: aqua;
 }
-@media (max-width: 500px) {
+@media (max-width: 620px) {
   .bottom btn {
-    max-width: 100%;
     font-size: 2rem;
+    height: 7vh;
+    padding-top: 5px;
   }
 }
 @media (max-width: 800px) {
   .bottom btn {
     margin-top: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .bottom btn {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1.75rem;
   }
 }
