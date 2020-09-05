@@ -1,0 +1,162 @@
+// Home page styles here
+
+.feature-img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+
+        @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }      
+        }
+
+    @media @mobile {
+        display: none;
+    }
+
+    @media @tablet {
+        margin-bottom: 0;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    img {
+        @media @tablet {
+            max-width: 100%;
+        }
+    }
+}
+
+.middle {
+    font-family: Arial;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .card {
+        display: flex;
+        margin-top: 60px;
+        width: 100%;
+
+        .card-text {
+            width: 40%;
+            margin-left: 80px;
+            margin-top: 120px;
+            line-height: 2;
+
+            @media @mobile {
+                margin: 20px 0;
+                min-width: 100%;
+                justify-content: center;
+            }
+
+            @media @tablet {
+                justify-content: center;
+            }
+
+            @media @tablet {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+
+            h2 {
+                @media @mobile {
+                    text-align: center;
+                }
+
+                @media @tablet {
+                    text-align: center;
+                }
+            }
+
+            p {
+                @media @mobile {
+                    margin: 0 20px;
+                }
+
+                @media @tablet {
+                    margin: 0 20px;
+                }
+            }
+        }
+
+        .card-img {
+            width: 60%;
+            display: flex;
+            margin-left: 80px;
+            justify-content: center;
+
+            @media @mobile {
+                margin: 0 auto 20px auto;
+                justify-content: center;
+                width: 100%;
+            }
+
+            @media @tablet {
+                margin: 0;
+                justify-content: center;
+                width: 100%;
+            }
+
+            img {
+                margin: 0 auto;
+
+                @media @tablet {
+                    min-width: 100%;
+                }
+            }
+        }
+
+        @media @mobile {
+            margin-top: 0;
+            flex-direction: column;
+        }
+
+        @media @tablet {
+            margin: 20px 0;
+            flex-direction: column;
+        }
+        
+    }
+
+    @media @tablet {
+        flex-direction: column;
+    }
+}
+
+.bottom {
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    btn {
+        .button-transform();
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        @media @mobile {
+            max-width: 100%;
+            font-size: 2rem;
+        }
+
+        @media @tablet {
+            margin-top: 20px;
+        }
+    }
+}
